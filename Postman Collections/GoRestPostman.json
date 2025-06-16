@@ -35,6 +35,21 @@
 		},
 		{
 			"name": "FilterPostsUsingOneFilter",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c2b6dfb-47b3-4027-a455-b9d59a24b90d",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "5ede95d4-7938-4fa8-aa6e-27bcac3fe351",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
